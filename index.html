@@ -6932,7 +6932,7 @@ class Toolbar {
 
         this._addButton(new ToolbarButtonClick('#hide-connections-2', tooltipBox,
             "Remove all connection arrows",
-            (e, target) => { ui.diag.clearArrows(); self._setRootButton(target); }));
+            (e, target) => { ui.diag.showAllArrows(); self._setRootButton(target); })); // jcc clearArrows()
 
         this._addButton(new ToolbarButtonClick('#show-all-connections', tooltipBox,
             "Show all connections in view",
