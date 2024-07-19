@@ -6690,6 +6690,7 @@ class Toolbar {
     constructor(ui) {
         this.toolbarContainer = d3.select('#toolbarLoc');
         this.toolbar = d3.select('#true-toolbar');
+        this.toolbar = d3.select('#show-all-connections') //jcc
         this.hideToolbarButton = d3.select('.toolbar-hide-container');
         this.hideToolbarIcon = this.hideToolbarButton.select('i');
         this.searchBar = d3.select('#awesompleteId');
