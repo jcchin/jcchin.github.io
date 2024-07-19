@@ -13926,7 +13926,7 @@ class OmUserInterface extends UserInterface {
 
     /** Display the solver tree. */
     showSolvers() {
-        this.diag.showSolvers = true;
+        this.diag.showSolvers = false; //jcc
         this.diag.update();
         d3.select('#n2-resizer-handle').attr('class', 'inactive-resizer-handle')
     }
@@ -14520,7 +14520,7 @@ class OmDiagram extends Diagram {
     _newLayout() {
 
         if (this.showSolvers === undefined)
-            this.showSolvers = true;
+            this.showSolvers = false; //jcc
 
         return new OmLayout(this.model, this.zoomedElement, this.dims, this.showSolvers);
     }
