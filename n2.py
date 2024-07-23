@@ -26,9 +26,9 @@ class ClimateChange(om.Group):
     def setup(self):
 
         self.add_subsystem('SeaLevelRise', SeaLevel(), promotes_inputs=[('Contrails', 'Temp')])
-        self.add_subsystem('whathappensifthisissuper_long_GHGemissions', Emissions(), promotes_inputs=[('NOx', 'CO2')])
+        self.add_subsystem('GHGemissions', Emissions(), promotes_inputs=[('NOx', 'CO2')])
 
-        self.connect('whathappensifthisissuper_long_GHGemissions.Temp', 'SeaLevelRise.Temp')
+        self.connect('GHGemissions.Temp', 'SeaLevelRise.Temp')
 
         self.nonlinear_solver = om.NewtonSolver(solve_subsystems=False)
         self.linear_solver = om.DirectSolver()
