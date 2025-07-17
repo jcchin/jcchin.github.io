@@ -3,62 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications & Patents | Jeff Chin</title>
+    <title>Jeff Chin | Aerospace Innovator</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <div class="container">
-        <aside class="sidebar">
-            <h1>Jeff Chin</h1>
-            <!-- <img src="profile.jpg" alt="Jeff Chin headshot" class="profile-pic"> -->
-            <nav>
+    <!-- LEFT-SIDE FIXED NAVIGATION -->
+    <aside class="sidebar">
+        <div class="sidebar-inner">
+            <div class="profile-info">
+                <!-- IMPORTANT: Replace 'profile.jpg' with the actual filename of your photo -->
+                <img src="profile.jpg" alt="Jeff Chin Profile Picture" class="profile-pic">
+                <h2>Jeff Chin</h2>
+                <p class="title">Aerospace Innovator | Propulsion & Energy Systems Expert</p>
+            </div>
+            <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="publications.html" class="active">Publications & Patents</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                    <li><a href="#projects"><i class="fas fa-rocket"></i> Key Projects</a></li>
+                    <li><a href="#publications"><i class="fas fa-book-open"></i> Publications</a></li>
+                    <li><a href="#inventions"><i class="fas fa-lightbulb"></i> Inventions</a></li>
+                    <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
                 </ul>
             </nav>
-            <div class="contact-info">
-                <p>jchin89@gmail.com</p>
-                <p>Boston, MA</p>
-                <p><a href="https://www.linkedin.com/in/your-profile-url/" target="_blank">LinkedIn Profile</a></p>
+            <div class="contact-links">
+                <a href="mailto:jchin89@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <!-- IMPORTANT: Add your LinkedIn profile URL here -->
+                <a href="https://www.linkedin.com/in/your-profile-url" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=LLB55BIAAAAJ" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <!-- IMPORTANT: Upload your resume as a PDF and link it here -->
+                <a href="Jeff_Chin_Resume.pdf" target="_blank" title="Download Resume"><i class="fas fa-file-pdf"></i></a>
             </div>
-        </aside>
+        </div>
+    </aside>
 
-        <main class="content">
-            <section>
-                <h2>Publications & Citations</h2>
-                <p>My research and development work has been documented in over 30 publications, which have been cited more than 660 times by my peers. A full, up-to-date list is available on my Google Scholar profile.</p>
-                <p>
-                    <a href="https://scholar.google.com/citations?user=LLB55BIAAAAJ" target="_blank" class="button">View on Google Scholar</a>
-                </p>
+    <!-- RIGHT-SIDE SCROLLABLE CONTENT -->
+    <main class="content">
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>For over a decade at the NASA Glenn Research Center, I have been at the forefront of aerospace innovation, leading pioneering research in electric propulsion, advanced battery systems, and transformative aeronautic concepts. My work is driven by a passion for solving complex engineering challenges and a commitment to shaping the future of flight.</p>
+            <p>I thrive on leading interdisciplinary teams to develop next-generation technology from concept to reality, bridging the gap between foundational research and flight-capable hardware. From leading systems analysis for the all-electric X-57 Maxwell aircraft to founding NASA Glenn's Innovation Lab, my career has been dedicated to pushing the boundaries of what's possible in aviation and beyond.</p>
+        </section>
 
-                <h3>Selected Publications</h3>
-                <ul class="publication-list">
-                    <li>Battery Cell-to-Pack Scaling Laws for Electric Aircraft (2021)</li>
-                    <li>Battery evaluation profiles for X-57 and future urban electric aircraft (2020)</li>
-                    <li>Multidisciplinary Optimization of an Electric Quadrotor Urban Air Mobility Aircraft (2020)</li>
-                    <li>X-57 Mod 2 motor thermal analysis (2019)</li>
-                    <li>Development of a Maxwell X-57 high lift motor reference design (2019)</li>
-                    <li>Battery performance modeling on sceptor x-57 subject to thermal and transient considerations (2019)</li>
-                </ul>
-            </section>
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience">
+            <h2>Experience & Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Center Integration Lead, Aeronautics Project Office</h3>
+                        <p class="company">NASA Glenn Research Center</p>
+                        <ul>
+                            <li>Guide and review novel research development across 37 local FTE and 107 total FTE.</li>
+                            <li>Oversee interdisciplinary teams in solid-state battery development, hybrid electric turbofans, sustainable composites, and quantum networking.</li>
+                            <li>Founder & Manager of NASA Glenn's Innovation Lab and Makerspace (100+ members).</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2010 - 2021</div>
+                    <div class="timeline-content">
+                        <h3>Aerospace Researcher, Propulsion Systems Analysis</h3>
+                        <p class="company">NASA Glenn Research Center</p>
+                        <ul>
+                            <li>GRC Systems Lead for the X-57 Maxwell all-electric experimental aircraft.</li>
+                            <li>PI for battery optimization research, introducing solutions with heat pipes, metal foams, and aerogels.</li>
+                            <li>PI for an Independent R&D award on shape memory alloy adaptive cooling systems.</li>
+                            <li>Mentor for the Multidisciplinary Aero Research Team Initiative (formerly ARMD NASA Academy).</li>
+                            <li>Co-PI & Avionics Lead for an Autonomously Navigated Experimental Lander project.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2018</div>
+                    <div class="timeline-content">
+                        <h3>M.S. Aeronautics and Astronautics Engineering</h3>
+                        <p class="company">Purdue University</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2012</div>
+                    <div class="timeline-content">
+                        <h3>B.S. Aerospace & Mechanical Engineering (Double Degree)</h3>
+                        <p class="company">Case Western Reserve University</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <section>
-                <h2>Invention Disclosures</h2>
-                <ul class="publication-list">
-                    <li>LEW No # 20038: "Passively cooled electric motor for volume constrained distributed electric propulsion vehicles"</li>
-                    <li>LEW No # 20234: "Integrated thermal battery pack design for electric aircraft"</li>
-                    <li>LEW No # 20235: "Simulator/Sensor Battery Cell for Battery Pack Design and Testing"</li>
-                    <li>LEW No # 19529: "Electric Counter-Rotating Ducted Turbomachinery for Propulsion..."</li>
-                    <li>LEW No # 19600: "Additive Manufactured Axial Flux Electric Motor"</li>
-                    <li>LEW No # 19614: "Shape Memory Alloy Adaptive Cooling Mechanism"</li>
-                    <li>LEW No # 19288: "PyCycle - A Cycle Modeling Tool For Design With Gradient Based Optimization"</li>
-                </ul>
-            </section>
-        </main>
-    </div>
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <h2>Key Projects</h2>
+            <div class="project-list">
+                <h3>The NASA X-57 Maxwell</h3>
+                <p>Led systems analysis for NASA's first all-electric aircraft in decades, focusing on performance and thermal design for the battery, motor, and power systems. Led the design and fabrication of several high-performance electric motors and their innovative cooling systems.</p>
+                <h3>Adaptive Cooling for Electric Propulsion</h3>
+                <p>Conceived and led a 5-person team on an Independent R&D award to develop a passive, shape-memory alloy adaptive cooling system, offering a high-reliability, low-weight thermal management solution.</p>
+                 <h3>Autonomously Navigated Experimental Lander</h3>
+                <p>Co-led an 11-person team to develop and fly a high-altitude balloon project to test autonomous navigation and landing technologies, which has since spawned a commercial variant for military applications.</p>
+            </div>
+        </section>
 
+        <!-- PUBLICATIONS SECTION -->
+        <section id="publications">
+            <h2>Publications</h2>
+            <p>Co-authored over 30 publications with 660+ citations. Full list available on <a href="https://scholar.google.com/citations?user=LLB55BIAAAAJ" target="_blank">Google Scholar</a>.</p>
+            <ol class="publication-list">
+                <li><b>Battery Cell-to-Pack Scaling Laws for Electric Aircraft.</b> <i>AIAA/IEEE Electric Aircraft Technologies Symposium (EATS), 2021.</i></li>
+                <li><b>Battery evaluation profiles for X-57 and future urban electric aircraft.</b> <i>AIAA/IEEE Electric Aircraft Technologies Symposium (EATS), 2020.</i></li>
+                <li><b>Multidisciplinary Optimization of an Electric Quadrotor Urban Air Mobility Aircraft.</b> <i>AIAA Aviation Forum, 2020.</i></li>
+                <li><b>X-57 Mod 2 motor thermal analysis.</b> <i>AIAA Aviation Forum, 2019.</i></li>
+                <li><b>Battery performance modeling on sceptor x-57 subject to thermal and transient considerations.</b> <i>AIAA Scitech Forum, 2019.</i></li>
+            </ol>
+        </section>
+
+        <!-- INVENTIONS SECTION -->
+        <section id="inventions">
+            <h2>Invention Disclosures</h2>
+            <ul class="invention-list">
+                <li><b>LEW No # 20038:</b> Passively cooled electric motor for volume constrained distributed electric propulsion vehicles</li>
+                <li><b>LEW No # 20234:</b> Integrated thermal battery pack design for electric aircraft</li>
+                <li><b>LEW No # 20235:</b> Simulator/Sensor Battery Cell for Battery Pack Design and Testing</li>
+                <li><b>LEW No # 19529:</b> Electric Counter-Rotating Ducted Turbomachinery for Propulsion...</li>
+                <li><b>LEW No # 19600:</b> Additive Manufactured Axial Flux Electric Motor</li>
+                <li><b>LEW No # 19614:</b> Shape Memory Alloy Adaptive Cooling Mechanism</li>
+                <li><b>LEW No # 19288:</b> PyCycle - A Cycle Modeling Tool For Design With Gradient Based Optimization</li>
+            </ul>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Core Engineering</h3>
+            <div class="skill-tags">
+                <span class="skill">CFD/FEA</span><span class="skill">Thermal Modeling</span>
+                <span class="skill">Electric Propulsion</span><span class="skill">Battery Systems</span>
+                <span class="skill">System Integration</span><span class="skill">MDO</span>
+                <span class="skill">Aerospace Systems</span><span class="skill">Hardware Design & Testing</span>
+            </div>
+            <h3>Software & Tools</h3>
+            <div class="skill-tags">
+                <span class="skill">COMSOL</span><span class="skill">MotorSolve</span>
+                <span class="skill">Solidworks</span><span class="skill">OpenVSP</span>
+                <span class="skill">OpenMDAO</span><span class="skill">TensorFlow</span>
+                <span class="skill">Git</span><span class="skill">Atlassian Suite</span>
+                <span class="skill">PowerBI</span><span class="skill">Sharepoint</span>
+            </div>
+             <h3>Programming</h3>
+            <div class="skill-tags">
+                <span class="skill">Python</span><span class="skill">Matlab/Simulink</span>
+                <span class="skill">Javascript</span><span class="skill">C++</span>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Design inspired by <a href="https://github.com/mrastgoo/mrastgoo.github.io" target="_blank">mrastgoo</a>. Content &copy; 2024 Jeff Chin.</p>
+        </footer>
+
+    </main>
 </body>
 </html>
