@@ -43,7 +43,7 @@ a:hover {
     font-size: 1.8rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    color: #007bff;
+    color: #000;
 }
 
 .profile-pic {
@@ -65,7 +65,7 @@ a:hover {
 
 .sidebar nav a {
     font-size: 1.1rem;
-    color: #333;
+    color: #007bff;
 }
 
 .sidebar nav a.active {
