@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications & Patents | Jeff Chin</title>
     <link rel="stylesheet" href="style.css">
+    <!-- === 1. ADD SWIPER'S CSS === -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 <body>
 
@@ -76,6 +79,39 @@ Work cited in the Wall Street Journal, Forbes Magazine, Popular Science, IEEE Sp
                 </ul>
             </section>
 
+            <!-- === 2. ADD CAROUSEL HTML STRUCTURE === -->
+        <section id="gallery">
+            <h2>Project Gallery</h2>
+            <!-- Slider main container -->
+            <div class="swiper mySwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="images/velodrome.jpg" alt="NASA X-57 Maxwell Aircraft" />
+                        <div class="slide-caption">NASA X-57 Maxwell All-Electric Aircraft</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/cleve.jpg" alt="Diagram of adaptive cooling system" />
+                        <div class="slide-caption">Shape Memory Alloy Adaptive Cooling System</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/pickleball.jpg" alt="High-altitude experimental lander" />
+                        <div class="slide-caption">Autonomously Navigated Experimental Lander</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/cuyahoga.jpg" alt="NASA Glenn Innovation Lab" />
+                        <div class="slide-caption">NASA Glenn's Innovation Lab & Makerspace</div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
             <section>
                 <h3>Family</h3>
                 <ul class="publication-list">
@@ -85,7 +121,26 @@ Work cited in the Wall Street Journal, Forbes Magazine, Popular Science, IEEE Sp
                 </ul>
             </section>
         </main>
-    </div>
 
+    </div>
+<!-- === 3. ADD SWIPER'S JAVASCRIPT AND INITIALIZE IT === -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true, // Allows the carousel to loop infinitely
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 5000, // Autoplay slides every 5 seconds
+          disableOnInteraction: false,
+        },
+      });
+    </script>
 </body>
 </html>
