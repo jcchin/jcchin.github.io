@@ -265,5 +265,6 @@ Iframe Container for Embedded Pages
   }
   .content {
     flex: 1; /* Content will take up the remaining space */
+    margin-left: 0px;
   }
 }
