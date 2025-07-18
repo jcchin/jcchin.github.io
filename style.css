@@ -249,3 +249,15 @@ Iframe Container for Embedded Pages
   /* object-position: center;  (Default) */
   /* object-position: top center;  (Focus on the top) */
 }
+
+/* --- Mobile styles (screens 600px or less) --- */
+@media (max-width: 600px) {
+  .image-container {
+    /*
+      On mobile, we override the flex-basis.
+      Setting it to 100% forces each image container
+      to take up the full width, creating a single-column layout.
+    */
+    flex-basis: 100%;
+  }
+}
