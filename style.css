@@ -260,4 +260,10 @@ Iframe Container for Embedded Pages
     */
     flex-basis: 100%;
   }
+  .sidebar {
+    flex: 0 0 220px; /* Sidebar will not grow or shrink, base width 220px */
+  }
+  .content {
+    flex: 1; /* Content will take up the remaining space */
+  }
 }
