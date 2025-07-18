@@ -229,6 +229,7 @@ Iframe Container for Embedded Pages
 
 .image-gallery {
   display: flex; /* Or grid */
+  flex-wrap: wrap; 
   gap: 1rem;
 }
 
