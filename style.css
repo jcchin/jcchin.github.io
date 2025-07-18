@@ -226,3 +226,25 @@ Iframe Container for Embedded Pages
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.image-gallery {
+  display: flex; /* Or grid */
+  gap: 1rem;
+}
+
+.image-container {
+  width: 300px; /* Or any width you want */
+}
+
+.image-container img {
+  /* Set the desired height and make the width responsive */
+  height: 200px;
+  width: 100%;
+
+  /* This is the key property */
+  object-fit: cover; /* This will crop the image to fit, without stretching */
+
+  /* Optional: Controls the focus of the crop */
+  /* object-position: center;  (Default) */
+  /* object-position: top center;  (Focus on the top) */
+}
