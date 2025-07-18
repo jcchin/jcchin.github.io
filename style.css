@@ -28,12 +28,8 @@ a:hover {
 /* This rule locks the sidebar to the screen */
 .sidebar {
     position: fixed; /* This is the key property! */
-    top: 0;
-    left: 0;
     width: 280px;
     height: 100%;
-    background-color: #1a1a1a;
-    /* ... other styles ... */
 }
 
 /* This rule pushes the main content to the right so it isn't hidden by the sidebar */
