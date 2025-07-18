@@ -132,72 +132,6 @@ a:hover {
 }
 
 
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-    body {
-        padding: 1rem;
-    }
-    .container {
-        flex-direction: column;
-        gap: 0;
-    }
-    .sidebar {
-        flex-basis: auto;
-        margin-bottom: 2rem;
-    }
-    .sidebar h1 {
-        font-size: 2rem;
-    }
-}
-
-/*
-=================================
-Carousel / Swiper Styles
-=================================
-*/
-
-#gallery {
-    padding-bottom: 3rem; /* Add some space at the bottom of the section */
-}
-
-.swiper {
-    width: 100%;
-    height: 500px; /* You can adjust the height */
-    border-radius: 10px;
-    background-color: #111;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #1c1c1c;
-
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Stack image and caption */
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* This makes the image cover the slide area */
-}
-
-.slide-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 15px;
-    font-size: 1rem;
-    box-sizing: border-box;
-    text-align: center;
-}
 
 /*
 =================================
@@ -250,21 +184,24 @@ Iframe Container for Embedded Pages
   /* object-position: top center;  (Focus on the top) */
 }
 
-/* --- Mobile styles (screens 600px or less) --- */
-@media (max-width: 600px) {
-  .image-container {
-    /*
-      On mobile, we override the flex-basis.
-      Setting it to 100% forces each image container
-      to take up the full width, creating a single-column layout.
-    */
-    flex-basis: 100%;
+/* --- MOBILE STYLES (screens 768px or smaller) --- */
+@media (max-width: 768px) {
+
+  /* 1. Stack the layout vertically */
+  .container {
+    flex-direction: column;
   }
+
+  /* 2. Un-fix the sidebar and make it behave like a normal div */
   .sidebar {
-    flex: 0 0 220px; /* Sidebar will not grow or shrink, base width 220px */
+    position: static;   /* This is the key! It removes the "fixed" behavior. */
+    width: 100%;        /* Make it take the full width of the screen */
+    height: auto;       /* Let its height be determined by its content */
+    overflow-y: visible; /* Reset the scrolling behavior */
   }
+
+  /* 3. IMPORTANT: Remove the margin from the content area */
   .content {
-    flex: 1; /* Content will take up the remaining space */
-    margin-left: 0px;
+    margin-left: 0;     /* Without this, your content will have a huge empty space on the left */
   }
 }
