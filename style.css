@@ -184,31 +184,30 @@ Iframe Container for Embedded Pages
   /* object-position: top center;  (Focus on the top) */
 }
 
-.tooltip-container {
- position: relative;
- display: inline-block;
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
-.tooltip-text {
- visibility: hidden;
- width: 160px;
- background-color: #555;
- color: #fff;
- text-align: center;
- border-radius: 6px;
- padding: 5px 0;
- position: absolute;
- z-index: 1;
- bottom: 125%; /* Position the tooltip above the image */
- left: 50%;
- margin-left: -80px; /* Use half of the width to center the tooltip */
- opacity: 0;
- transition: opacity 0.3s;
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
 }
 
-.tooltip-container:hover .tooltip-text {
- visibility: visible;
- opacity: 1;
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 /* --- MOBILE STYLES (screens 768px or smaller) --- */
