@@ -1,6 +1,8 @@
 # Personal Website of Jeff Chin
 
-This repository contains the source code for the personal portfolio website of Jeff Chin, an engineer, researcher, and inventor. The website showcases his professional background, projects, publications, and personal interests.
+https://jcchin.github.io/
+
+This repository contains the source code for the personal portfolio website of Jeff Chin.
 
 ## Website Content
 
@@ -14,6 +16,8 @@ The website is divided into the following sections:
 ## How to View
 
 To view the website, simply open the `index.html` file in your web browser.
+
+https://jcchin.github.io/
 
 ## Technologies Used
 
